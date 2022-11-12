@@ -1,5 +1,5 @@
-name: 10010v3
-desc: 联通余量(v3)
+name: 100
+desc: 联通
 
 http:
   force-http-engine:
