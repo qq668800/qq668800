@@ -1,5 +1,5 @@
-name: 100
-desc: 联通
+name: 10010v3
+desc: 联通余量(v3)
 
 http:
   force-http-engine:
@@ -26,10 +26,10 @@ tiles:
 cron:
   script:
     - name: "10010v3"
-      cron: "*/1 * * * *" # at every 1th minute
+      cron: "*/5 * * * *" # at every 5th minute
       timeout: 60
 
 script-providers:
-  "100":
-    url: https://github.com/qq668800/qq668800/raw/main/%E8%81%94%E9%80%9A.js
+  "10010v3":
+    url: https://raw.githubusercontent.com/xream/scripts/main/surge/modules/10010v3/10010.js
     interval: 86400
