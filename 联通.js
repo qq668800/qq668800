@@ -30,6 +30,6 @@ cron:
       timeout: 60
 
 script-providers:
-  "10010v3":
-    url: https://raw.githubusercontent.com/xream/scripts/main/surge/modules/10010v3/10010.js
+  "100":
+    url: https://github.com/qq668800/qq668800/raw/main/%E8%81%94%E9%80%9A.js
     interval: 86400
