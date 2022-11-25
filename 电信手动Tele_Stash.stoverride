@@ -5,7 +5,7 @@ desc: 电信免流跳点通知（需配合请求体覆写）
 cron:
   script:
     - name: Telecom
-      cron: '*/5 * * * *' # at every 5th minute
+      cron: '*/10 * * * *' # at every 5th minute
       timeout: 10 # optional
 tiles:
   - name: Telecom
