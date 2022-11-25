@@ -26,7 +26,7 @@ tiles:
 cron:
   script:
     - name: "10010v3"
-      cron: "*/5 * * * *" # at every 1th minute
+      cron: "*/10 * * * *" # at every 1th minute
       timeout: 60
 
 script-providers:
