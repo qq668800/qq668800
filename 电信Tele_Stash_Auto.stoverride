@@ -1,1 +1,19 @@
-名称：电信余量（自动版）desc：电信免流跳点通知，请BoxJS中安装https://raw.githubusercontent.com/QGCliveDavis/Module/main/Telecom/Tele.json订阅，进行后续配置cron：脚本：-名称：Telecom_Autocron：'*/10 * * * *' # at every 5th minute超时：10 #可选瓷砖：-名称：Telecom_Auto标题：今日免流信息内容：''背景颜色："#0099FF"图标："dial.max.fill"间隔：600脚本提供者：Telecom_Auto：网址：https://raw.githubusercontent.com/QGCliveDavis/Module/main/Telecom/Tele_Cellular_Auto.js间隔：86400
+name: 电信余量(自动版)
+desc: 电信免流跳点通知,请在BoxJS中安装https://raw.githubusercontent.com/QGCliveDavis/Module/main/Telecom/Tele.json订阅,进行后续配置
+
+cron:
+  script:
+    - name: Telecom_Auto
+      cron: '*/5 * * * *' # at every 5th minute
+      timeout: 10 # optional
+tiles:
+  - name: Telecom_Auto
+    title: 今日免流信息
+    content: ''
+    backgroundColor: "#0099FF"
+    icon: "dial.max.fill"
+    interval: 600
+script-providers:
+  Telecom_Auto:
+    url: https://raw.githubusercontent.com/QGCliveDavis/Module/main/Telecom/Tele_Cellular_Auto.js
+    interval: 86400
