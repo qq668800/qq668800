@@ -101,7 +101,7 @@ ipcidr_http_group: &ipcidr_http_group
 proxy-providers:
   Subscribe:
     !!merge <<: *healthy_check_group
-    url: http://sub.store/download/%E6%9C%A8%E7%93%9C?target=Stash
+    Stash
     path: ./proxy_providers/tmp.yaml
 proxy-groups:
   - {name: 国外, !!merge <<: *selected_proxy_group, proxies: [🇭🇰 香港节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, DIRECT], type: select}
